@@ -13,7 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <camel.version></camel.version>
+    <camel.version>2.15.3</camel.version>
 
   </properties>
 
@@ -52,18 +52,32 @@
   <build>
 
     <plugins>
-      <plugin>
+    <!--  <plugin>
         <groupId>org.apache.camel</groupId>
         <artifactId></artifactId>
-        <!-- optional, default value: org.apache.camel.spring.Main -->
+        &lt;!&ndash; optional, default value: org.apache.camel.spring.Main &ndash;&gt;
         <configuration>
           <mainClass>mypackage.boot.camel.CamelStartup</mainClass>
         </configuration>
-      </plugin>
+      </plugin>-->
 
     </plugins>
 
 
   </build>
+
+    <repositories>
+        <repository>
+            <id>apache-public</id>
+            <url>https://repository.apache.org/content/groups/public/</url>
+            <name>Apache Public Repository</name>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>
