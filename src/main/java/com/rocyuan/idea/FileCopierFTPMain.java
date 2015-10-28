@@ -4,7 +4,6 @@ import javax.annotation.processing.Processor;
 import org.apache.camel.CamelContext;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
-import org.apache.camel.Processor;
 import org.apache.camel.Exchange;
 import java.io.File;
 import java.io.BufferedReader;
@@ -28,7 +27,7 @@ public class FileCopierFTPMain {
                     from("ftp://192.168.230.1:21?username=mauro")
                             .choice()
                             .when(header("CamelFileName").endsWith(".xml"))
-                            .process(new Processor() {
+                            .process(new org.apache.camel.Processor() {
                                 public void process(Exchange exchange) throws Exception {
 
                                     System.out.println("Copying file XML: "
@@ -38,7 +37,7 @@ public class FileCopierFTPMain {
                             })
                             .to("file:C:/DataOUT")//.setHeader(Exchange.FILE_NAME,simple("${file:name.	noext}.old"))
                             .when(header("CamelFileName").endsWith(".txt"))
-                            .process(new Processor() {
+                            .process(new org.apache.camel.Processor() {
                                 public void process(Exchange exchange) throws Exception {
 
                                     System.out.println("Copying file txt: "
