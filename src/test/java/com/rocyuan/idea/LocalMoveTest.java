@@ -26,7 +26,7 @@ public class LocalMoveTest extends CamelTestSupport {
 
                 getContext().getShutdownStrategy().setTimeout(5);
 
-                from("file:D:/tmp/lepow")
+                from("file:D:/tmp/lepow?recursive=true")
                         .log("Uploading file ${file:name}")
                         .to("file:D:/tmp/in")
                         .log("Uploaded file ${file:name} complete.");

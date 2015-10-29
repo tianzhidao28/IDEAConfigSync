@@ -13,9 +13,6 @@ public class MoreRouterBuilders {
         public void configure() throws Exception {
             PropertiesComponent pc = getContext().getComponent("properties", PropertiesComponent.class);
             pc.setLocation("classpath:ftp.properties");
-
-
-
             from("file:D:\\tmp\\lepow?delay=30000").to("file:D:\\tmp\\in");  //本地文件互传
         }
     }
@@ -35,7 +32,6 @@ public class MoreRouterBuilders {
             // configure properties component
             PropertiesComponent pc = getContext().getComponent("properties", PropertiesComponent.class);
             pc.setLocation("classpath:ftp.properties");
-
             // lets shutdown faster in case of in-flight messages stack up
             getContext().getShutdownStrategy().setTimeout(10);
 
@@ -52,6 +48,38 @@ public class MoreRouterBuilders {
             System.out.println("If the file upload fails, then the file is moved to the target/error directory.");
             System.out.println("Use ctrl + c to stop this application.");
             System.out.println("*********************************************************************************");
+
+        }
+    }
+
+
+    public static class SyncIDEAConfig extends RouteBuilder{
+
+        /**
+         * <b>Called on initialization to build the routes using the fluent builder syntax.</b>
+         * <p/>
+         * This is a central method for RouteBuilder implementations to implement
+         * the routes using the Java fluent builder syntax.
+         *
+         * @throws Exception can be thrown during configuration
+         */
+        @Override
+        public void configure() throws Exception {
+
+            PropertiesComponent pc = getContext().getComponent("properties", PropertiesComponent.class);
+            pc.setLocation("classpath:idea.properties");
+            // lets shutdown faster in case of in-flight messages stack up
+            getContext().getShutdownStrategy().setTimeout(20);
+
+
+            from("{{idea.configfile.local}}?recursive=true&antExclude=*/.jar&move=backup/${date:now:yyyyMMdd}/${file:name}")
+                    .log("move new file ${file:name}")
+                    .to("{{idea.configfile.center}}?autoCreate=true&fileExist=Override")
+                    .log("move new file ${file:name} complete.");
+
+
+
+
 
         }
     }
