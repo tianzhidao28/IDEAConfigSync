@@ -1,6 +1,16 @@
+
+
+
+
+
 # ALLEGRO INTELLIJ IDEA CODE TEMPLATES#
 
 The repository contains set of live and file templates for IntelliJ IDEA IDE.
+
+## 若有中文目录 
+* 
+*       第三种方法，设置FTPClient的编码，这个终于OK了，关键就在最后的红字，ftpClient.controlEncoding=gb2312
+*       String uri = "ftp://username@10.10.XX4.122/中文目录?password=xxxx&ftpClient.controlEncoding=gb2312";
 
 ### Installation ###
 Copy folders *templates* and *fileTemplates* to one of the following location:
