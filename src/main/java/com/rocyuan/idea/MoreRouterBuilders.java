@@ -71,11 +71,12 @@ public class MoreRouterBuilders {
             // lets shutdown faster in case of in-flight messages stack up
             getContext().getShutdownStrategy().setTimeout(20);
 
-
-            from("{{idea.configfile.local}}?recursive=true&antExclude=*/.jar&move=backup/${date:now:yyyyMMdd}/${file:name}")
+            // 同步IDEA的模板到 git
+            from("{{idea.configfile.local}}?recursive=true&antExclude=**.jar,**/consoles/**,**/eval/**,**/inspection/**,**/options/**,**/plugins/**,**/tasks/**&move=backup/${date:now:yyyyMMdd}/${file:name}")
                     .log("move new file ${file:name}")
                     .to("{{idea.configfile.center}}?autoCreate=true &fileExist=Override")
                     .log("move new file ${file:name} complete.");
+
 
 
 

@@ -1,6 +1,20 @@
+
+
+
+
+
 # ALLEGRO INTELLIJ IDEA CODE TEMPLATES#
 
 The repository contains set of live and file templates for IntelliJ IDEA IDE.
+
+## 示例
+
+![示例图][1]
+
+## 若有中文目录 
+* 
+*       第三种方法，设置FTPClient的编码，这个终于OK了，关键就在最后的红字，ftpClient.controlEncoding=gb2312
+*       String uri = "ftp://username@10.10.XX4.122/中文目录?password=xxxx&ftpClient.controlEncoding=gb2312";
 
 ### Installation ###
 Copy folders *templates* and *fileTemplates* to one of the following location:
@@ -155,3 +169,10 @@ Note: For surround templates, highlight the text then hit <code>Alt + Cmd + J</c
 |<code>soarv  + Tab</code>               |spy on and                                                                 |
 |<code>soacf  + Tab</code>               |spy on and call fake                                                       |
 |<code>soate  + Tab</code>               |spy on and throw error                                                     |
+
+
+
+
+
+
+  [1]: http://7xj6si.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20151030203233.png

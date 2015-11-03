@@ -1,0 +1,7 @@
+<templateSet group="Zen HTML">
+  <template name="compile" value="&lt;plugin&gt;&#10;        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;&#10;        &lt;configuration&gt;&#10;            &lt;source&gt;1.7&lt;/source&gt;&#10;            &lt;target&gt;1.7&lt;/target&gt;&#10;            &lt;encoding&gt;UTF-8&lt;/encoding&gt;&#10;        &lt;/configuration&gt;&#10;&lt;/plugin&gt;" description="maven compilecomplier插件默认只支持编译Java 1.4(ERROR 未结束的字符串字面值)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="MAVEN" value="true" />
+    </context>
+  </template>
+</templateSet>
