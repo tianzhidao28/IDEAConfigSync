@@ -1,0 +1,7 @@
+<application>
+  <component name="UpdatesConfigurable">
+    <outdatedPlugins>
+      <item value="org.intellij.plugins.markdown" />
+    </outdatedPlugins>
+  </component>
+</application>

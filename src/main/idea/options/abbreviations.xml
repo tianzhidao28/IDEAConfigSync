@@ -1,0 +1,9 @@
+<application>
+  <component name="AbbreviationManager">
+    <abbreviations>
+      <action id="org.jetbrains.plugins.groovy.actions.generate.accessors.GroovyGenerateGetterSetterAction">
+        <abbreviation name="GetSet" />
+      </action>
+    </abbreviations>
+  </component>
+</application>

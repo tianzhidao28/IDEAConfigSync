@@ -1,0 +1,26 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1366.768" x="683" y="230" />
+    <location key="FileChooserDialogImpl.0.0.1366.768" x="463" y="112" />
+    <location key="new project wizard.0.0.1366.768" x="308" y="0" />
+    <location key="#Browse_Repositories.0.0.1366.768" x="263" y="0" />
+    <location key="#Plugins.0.0.1366.768" x="275" y="0" />
+    <location key="GitCloneDialog.0.0.1366.768" x="489" y="221" />
+    <location key="NewModule_or_Project.wizard.0.0.1366.768" x="321" y="0" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1366.768" x="390" y="175" />
+    <location key="SettingsEditor.0.0.1366.768" x="59" y="28" />
+    <location key="com.intellij.testIntegration.createTest.CreateTestDialog.0.0.1366.768" x="698" y="115" />
+    <location key="save.project.as.template.dialog.0.0.1366.768" x="420" y="319" />
+    <location key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog.0.0.1366.768" x="450" y="21" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1366.768" x="197" y="14" />
+    <location key="#Notifications.0.0.1366.768" x="492" y="84" />
+    <location key="EditParametersPopupWindow.0.0.1366.768" x="516" y="214" />
+    <location key="#com.intellij.tools.ToolEditorDialog.0.0.1366.768" x="354" y="114" />
+    <size key="SettingsEditor.0.0.1366.768" width="1307" height="700" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1330" height="163" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1330" height="163" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1330" height="163" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1330" height="163" />
+    <size key="NewModule_or_Project.wizard.0.0.1366.768" width="821" height="729" />
+  </component>
+</application>

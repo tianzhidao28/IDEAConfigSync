@@ -1,0 +1,42 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>webx_version</find>
+      <find>void</find>
+      <find>jackson_version</find>
+      <find>LepowCode</find>
+      <find>profile</find>
+      <find>file_encoding</find>
+      <find>skip_maven_deploy</find>
+      <find>skip</find>
+      <find>_</find>
+      <find>bom</find>
+      <find>slf4j</find>
+      <find>ski</find>
+      <find>分店</find>
+      <find>registerLock</find>
+      <find>afterPropertiesSet</find>
+      <find>put</find>
+      <find>LoggerFactory</find>
+      <find>configClient</find>
+      <find>PropertiesFactoryBean</find>
+      <find>fileProperties</find>
+      <find>location</find>
+      <find>locations</find>
+      <find>properties</find>
+      <find>propertiesFactory</find>
+      <find>SYSTEM_PROPERTIES_MODE_OVERRIDE</find>
+      <find>resolvePlaceholder</find>
+      <find>props</find>
+      <find>spring-web</find>
+      <find>JPayCode</find>
+      <find>start-class</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>boolean</replace>
+      <replace>.</replace>
+      <replace>1</replace>
+      <replace>APICode</replace>
+    </replaceStrings>
+  </component>
+</application>
