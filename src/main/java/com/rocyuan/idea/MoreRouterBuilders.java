@@ -74,7 +74,7 @@ public class MoreRouterBuilders {
 
             from("{{idea.configfile.local}}?recursive=true&antExclude=*/.jar&move=backup/${date:now:yyyyMMdd}/${file:name}")
                     .log("move new file ${file:name}")
-                    .to("{{idea.configfile.center}}?autoCreate=true&fileExist=Override")
+                    .to("{{idea.configfile.center}}?autoCreate=true &fileExist=Override")
                     .log("move new file ${file:name} complete.");
 
 
