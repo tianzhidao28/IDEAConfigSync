@@ -24,9 +24,9 @@ func main() {
 	var date = now.Add(time.Duration(-now.Second()*int(time.Second) - now.Hour()*int(time.Hour) - now.Minute()*int(time.Minute)))
 	values := url.Values{}
 	values.Add("action", "profile")
-	values.Add("pc", "an13d36a41c31af0402fac9bcae06bfa97")
+	values.Add("pc", "XXXXXXXXXXX7")
 	values.Add("cmd", "updatedaily")
-	values.Add("uid", "39050540")
+	values.Add("uid", "XXXXXXXXX")
 	values.Add("list", fmt.Sprintf(pp, date.Unix(), steps))
 
 	resp, err := http.PostForm("http://pl.api.ledongli.cn/xq/io.ashx", values)
